@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4
+  BulletTime: 1
 --- !u!95 &2944130373544257746
 Animator:
   serializedVersion: 5
