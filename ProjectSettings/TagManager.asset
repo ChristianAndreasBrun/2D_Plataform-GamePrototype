@@ -39,6 +39,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 501672609
+    locked: 0
+  - name: BG_Tiles
+    uniqueID: 1825212387
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
