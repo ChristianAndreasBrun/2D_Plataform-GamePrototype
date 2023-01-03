@@ -13,8 +13,8 @@ public class HorizontalMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ground= GetComponent<GroundDetect_Raycast>();
-        anim= GetComponent<Animator>();
+        ground = GetComponent<GroundDetect_Raycast>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,11 +26,11 @@ public class HorizontalMovement : MonoBehaviour
         anim.SetBool("grounded", ground.grounded);
         anim.SetBool("moving", horizontal != 0);
 
-        if (horizontal > 0 )
+        if (horizontal > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        if (horizontal < 0 )
+        if (horizontal < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
