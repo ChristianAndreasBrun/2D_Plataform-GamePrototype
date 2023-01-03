@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4e583622bf10e8a4f93ad3d68b07c37a
+guid: fc5f35dde8ae96e4987900093fc86d65
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Punk_attack3_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 5
         y: 0
-        width: 21
-        height: 40
+        width: 17
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,41 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5507aa676b1b7264f986c035f51148c4
-      internalID: 1611056523
+      spriteID: bebb7d0d072a84848820c9b43c92ecb3
+      internalID: -1390280036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: Punk_attack3_1
       rect:
         serializedVersion: 2
-        x: 51
-        y: 0
-        width: 21
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31ad1f699ad1a204c8b261bbd7a5493f
-      internalID: 1854518335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_2
-      rect:
-        serializedVersion: 2
-        x: 98
+        x: 48
         y: 0
         width: 22
-        height: 40
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 546e8dfe1e459f344bd6d21758b76ad6
-      internalID: -1655560639
+      spriteID: aa61ce717215f9d41b4623cea28ccdfb
+      internalID: -95970790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: Punk_attack3_2
       rect:
         serializedVersion: 2
-        x: 146
+        x: 96
         y: 0
-        width: 21
-        height: 40
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +173,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f17b73a27075a474584039579218f621
-      internalID: -423355868
+      spriteID: 3d3280292ccd12b459eb5f0289b62670
+      internalID: -1610411636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae49508796641045b7ae456216cff8e
+      internalID: -1104530934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae8dbe2672e5334d97be50e9a42ed3d
+      internalID: 2064691351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d81678f514c35848a5bcb088079d0b3
+      internalID: -702859394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_6
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 9
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fdfb1f8d481024880254701f62e2c7
+      internalID: 949843757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_7
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 0
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21f2cadeb3213048a0107ac728891d2
+      internalID: -692388102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 6
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd06263574fd4c948b892101093e9c56
+      internalID: 394295931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_9
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94df80ca46bd1214c8db89202bf3a190
+      internalID: 1863903983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_10
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 5
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bca15009a005f44893145cc24635e5d
+      internalID: 337252369
       vertices: []
       indices: 
       edges: []
@@ -211,10 +358,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_1: 1854518335
-      Idle_3: -423355868
-      Idle_0: 1611056523
-      Idle_2: -1655560639
+      Punk_attack3_2: -1610411636
+      Punk_attack3_3: -1104530934
+      Punk_attack3_1: -95970790
+      Punk_attack3_9: 1863903983
+      Punk_attack3_10: 337252369
+      Punk_attack3_0: -1390280036
+      Punk_attack3_8: 394295931
+      Punk_attack3_5: -702859394
+      Punk_attack3_6: 949843757
+      Punk_attack3_7: -692388102
+      Punk_attack3_4: 2064691351
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
