@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sound: {fileID: 8300000, guid: dc71c33beecccc34894535aa074928e0, type: 3}
-  Speed: 2
+  Speed: 3
 --- !u!95 &610716957101014206
 Animator:
   serializedVersion: 5
