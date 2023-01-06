@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - MobliePlataform
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,12 @@ TagManager:
   - name: BG_Tiles
     uniqueID: 1825212387
     locked: 0
+  - name: Decals
+    uniqueID: 1959343801
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: FG_Tiles
+    uniqueID: 2388946507
     locked: 0
