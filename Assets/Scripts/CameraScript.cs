@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public GameObject PLAYER;
+    public float Speed;
+    public Vector3 offSet;
+    public Transform Target;
+
+    //private GameObject PLAYER;
 
     void Update()
     {
-        if (PLAYER != null)
-        {
-            Vector3 position = transform.position;
-            position.x = PLAYER.transform.position.x;
-            position.y = PLAYER.transform.position.y;
-            transform.position = position;
-        }
+        transform.position = Vector3.Lerp(transform.position, Target.position + offSet, Speed * Time.deltaTime);
     }
 }
