@@ -27,7 +27,7 @@ public class Grunt_EnemyScript : MonoBehaviour
 
         // El enemigo nos dispara al alacanzar la distancia establecida
         float distance = Mathf.Abs(PLAYER.transform.position.x - transform.position.x);
-        if (distance < 1 && Time.time > LastShoot + 0.25f)
+        if (distance < 4 && Time.time > LastShoot + 0.25f)
         {
             Shoot();
             LastShoot = Time.time;

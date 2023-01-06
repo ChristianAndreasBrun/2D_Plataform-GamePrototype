@@ -972,9 +972,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   originPoints:
-  - {x: -0.05, y: -0.06, z: 0}
-  - {x: -0.14, y: -0.04, z: 0}
-  - {x: 0.03, y: -0.04, z: 0}
+  - {x: -0.05, y: -0.12, z: 0}
+  - {x: -0.17, y: -0.09, z: 0}
+  - {x: 0.05, y: -0.09, z: 0}
 --- !u!70 &519466146
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -988,8 +988,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.066963196, y: 0.0068352073}
-  m_Size: {x: 0.30770683, y: 0.43871054}
+  m_Offset: {x: -0.07883453, y: 0.01277107}
+  m_Size: {x: 0.3361988, y: 0.54555595}
   m_Direction: 0
 --- !u!95 &519466147
 Animator:
@@ -4907,8 +4907,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06702328, y: 0.010170773}
-  m_Size: {x: 0.2710228, y: 0.4320394}
+  m_Offset: {x: -0.07296753, y: 0.012548566}
+  m_Size: {x: 0.35424423, y: 0.546173}
   m_Direction: 0
 --- !u!95 &1957345499
 Animator:

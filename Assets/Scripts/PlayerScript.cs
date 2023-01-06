@@ -80,7 +80,7 @@ public class PlayerScript : MonoBehaviour
         }
 
         // Input del Player para disparar
-        if (Input.GetKey(KeyCode.C) && Time.time > LastShoot + 0.25f) 
+        if (Input.GetKey(KeyCode.C) && Time.time > LastShoot + 0.15f) 
         {
             Shoot();
             LastShoot = Time.time;
