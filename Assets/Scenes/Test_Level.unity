@@ -946,6 +946,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 17612483}
+  - {fileID: 1299571079}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1728,7 +1729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae592ebd139eee41a3026ef85fcbbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PLAYER: {fileID: 519466134}
+  Speed: 4
+  offSet: {x: 0, y: 1, z: -10}
+  Target: {fileID: 1299571079}
 --- !u!82 &1061060965
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1893,6 +1896,37 @@ Transform:
   - {fileID: 318357228}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1299571078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299571079}
+  m_Layer: 0
+  m_Name: CamaraTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299571079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299571078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.656, y: 0.047, z: 1.7730125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519466138}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1368334532
 GameObject:
@@ -2273,7 +2307,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 16
-      m_TileSpriteIndex: 16
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2354,10 +2388,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 7b078b3c50ff6334a97d2b36bbe44714, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: 7c2052b2d0c2b3b419e3132e2d8dc78f, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 27d76f61835ce5f4088e84dc56a059b9, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 27d76f61835ce5f4088e84dc56a059b9, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: 7b272001bd62b4341926bb6fac680b30, type: 3}
   - m_RefCount: 4
