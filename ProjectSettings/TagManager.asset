@@ -3,14 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - MobliePlataform
-  - Enemy
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - 
@@ -40,26 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 501672609
-    locked: 0
-  - name: BG_Tiles
-    uniqueID: 1825212387
-    locked: 0
-  - name: Decals
-<<<<<<< HEAD
-    uniqueID: 1959343801
-=======
-    uniqueID: 1496423413
->>>>>>> develop
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: FG_Tiles
-<<<<<<< HEAD
-    uniqueID: 2388946507
-=======
-    uniqueID: 2717332049
->>>>>>> develop
     locked: 0
