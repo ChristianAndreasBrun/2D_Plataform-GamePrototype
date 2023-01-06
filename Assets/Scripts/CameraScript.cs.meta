@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Scripts/CameraScript.cs.meta
 guid: 478e58f7e4e48a54389000320f4f79eb
+========
+guid: a870ace24dc51e048a90b2c1f42e1c9a
+>>>>>>>> develop:Assets/Scripts/Grunt_EnemyScript.cs.meta
+=======
+<<<<<<<< HEAD:Assets/Scripts/BulletScript.cs.meta
+guid: 95793572aabe0fc4a830bde9b27b3852
+========
+guid: 7ae592ebd139eee41a3026ef85fcbbea
+>>>>>>>> develop:Assets/Scripts/CameraScript.cs.meta
+>>>>>>> develop
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

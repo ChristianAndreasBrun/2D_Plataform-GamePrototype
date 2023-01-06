@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Scripts/PlataformMovement.cs.meta
 guid: bab13fa4de893f24aad117e990ac38f6
+========
+guid: 9682bedeba35ee546831a09b1cb0cfe6
+>>>>>>>> develop:Assets/Scripts/BulletScript.cs.meta
+=======
+<<<<<<<< HEAD:Assets/Scripts/Grunt_EnemyScript.cs.meta
+guid: 8167d1a27e71cf741b9996406193af3b
+========
+guid: a58fc9a78ec99c24b8dbb5d1abe32490
+>>>>>>>> develop:Assets/Scripts/PlataformMovement.cs.meta
+>>>>>>> develop
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
