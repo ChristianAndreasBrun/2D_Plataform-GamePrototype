@@ -10,12 +10,17 @@ public class PlayerScript : MonoBehaviour
     public float Speed;
     public float JumpForce;
     public float AirForce;
-    public int MaxJumps;
+    public int MaxJumps = 2;
     public int Health = 5;
+    public bool Grounded;
+    public float RayLenght = 1;
+    public LayerMask Mask;
+    public List<Vector3> originPoints;
+
 
     private Rigidbody2D Rigidbody2D;
     private Animator Animator;
-    private Raycast_GroundScript Ground;
+    //private int Ground;
     private float Horizontal;
     private float LastShoot;
     private int Jumps;
@@ -24,11 +29,40 @@ public class PlayerScript : MonoBehaviour
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
-        Ground = GetComponent<Raycast_GroundScript>();
+        //Ground = GetComponent<Raycast_GroundScript>();
     }
 
     void Update()
     {
+        Grounded = false;
+        for (int i = 0; i < originPoints.Count; i++)
+        {
+            Debug.DrawRay(transform.position + originPoints[i], Vector3.down * RayLenght, Color.red);
+
+            // Crea un rayo invisible que detecta colision
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + originPoints[i], Vector3.down, RayLenght, Mask);
+
+            if (hit.collider != null)
+            {
+                if (hit.collider.tag == "MobliePlataform")
+                {
+                    transform.parent = hit.transform;
+                }
+
+                Debug.DrawRay(transform.position + originPoints[i], Vector3.down * hit.distance, Color.green);
+                Grounded = true;
+            }
+            else
+            {
+                transform.parent = null;
+            }
+        }
+        if (!Grounded)
+        {
+            transform.parent = null;
+        }
+
+
         // Movimiento Horizontal del Player
         Horizontal = Input.GetAxisRaw("Horizontal");
         if (Horizontal < 0)
@@ -40,13 +74,14 @@ public class PlayerScript : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
 
+
         // Variable bool - running
         Animator.SetBool("running", Horizontal != 0.0f);
-        Animator.SetBool("grounded", Ground.Grounded);
+        Animator.SetBool("grounded", Grounded);
 
 
 
-        if (Ground.Grounded)
+        if (Grounded)
         {
             Jumps = MaxJumps;
         }
@@ -73,7 +108,7 @@ public class PlayerScript : MonoBehaviour
         Rigidbody2D.AddForce(new Vector2(0, JumpForce));
         Jumps--;
 
-        if (Ground.Grounded)
+        if (Grounded)
         {
             Rigidbody2D.AddForce(new Vector2(0, JumpForce));
         }
