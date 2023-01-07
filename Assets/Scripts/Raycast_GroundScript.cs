@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Raycast_GroundScript : MonoBehaviour
 {
-    public LayerMask Mask;
-    public float RayLenght;
+    public float RayLenght = 1;
+    public LayerMask mask;
     public List<Vector3> originPoints;
     public bool Grounded;
 
-
-    void Update()
+    void Start()
     {
         Grounded = false;
         for (int i = 0; i < originPoints.Count; i++)
@@ -19,7 +19,7 @@ public class Raycast_GroundScript : MonoBehaviour
             Debug.DrawRay(transform.position + originPoints[i], Vector3.down * RayLenght, Color.red);
 
             // Crea un rayo invisible que detecta colision
-            RaycastHit2D hit = Physics2D.Raycast(transform.position + originPoints[i], Vector3.down, RayLenght, Mask);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position + originPoints[i], Vector3.down, RayLenght, mask);
 
             if (hit.collider != null)
             {
@@ -36,9 +36,11 @@ public class Raycast_GroundScript : MonoBehaviour
                 transform.parent = null;
             }
         }
-    //    if (!Grounded)
-    //    {
-    //        transform.parent = null;
-    //    }
+        //if (!Grounded)
+        //{
+        //    transform.parent = null;
+        //}
+
     }
 }
+

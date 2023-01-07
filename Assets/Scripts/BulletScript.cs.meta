@@ -1,17 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Scripts/BulletScript.cs.meta
-guid: 95793572aabe0fc4a830bde9b27b3852
-========
-guid: 7ae592ebd139eee41a3026ef85fcbbea
->>>>>>>> develop:Assets/Scripts/CameraScript.cs.meta
-=======
-<<<<<<<< HEAD:Assets/Scripts/PlataformMovement.cs.meta
-guid: bab13fa4de893f24aad117e990ac38f6
-========
 guid: 9682bedeba35ee546831a09b1cb0cfe6
->>>>>>>> develop:Assets/Scripts/BulletScript.cs.meta
->>>>>>> develop
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
