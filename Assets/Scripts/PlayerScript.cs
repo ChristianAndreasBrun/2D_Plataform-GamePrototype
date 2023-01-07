@@ -9,6 +9,8 @@ public class PlayerScript : MonoBehaviour
     public GameObject PlayerBullet;
     public float Speed;
     public float JumpForce;
+    public float AirForce;
+    public int MaxJumps;
     public int Health = 5;
 
     private Rigidbody2D Rigidbody2D;
@@ -16,6 +18,7 @@ public class PlayerScript : MonoBehaviour
     private Raycast_GroundScript Ground;
     private float Horizontal;
     private float LastShoot;
+    private int Jumps;
 
     void Start()
     {
@@ -42,8 +45,13 @@ public class PlayerScript : MonoBehaviour
         Animator.SetBool("grounded", Ground.Grounded);
 
 
+
+        if (Ground.Grounded)
+        {
+            Jumps = MaxJumps;
+        }
         // Input del Player para saltar
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && Jumps > 0)
         {
             Jump();
         }
@@ -62,7 +70,17 @@ public class PlayerScript : MonoBehaviour
 
     private void Jump()
     {
-        Rigidbody2D.AddForce(Vector2.up * JumpForce);
+        Rigidbody2D.AddForce(new Vector2(0, JumpForce));
+        Jumps--;
+
+        if (Ground.Grounded)
+        {
+            Rigidbody2D.AddForce(new Vector2(0, JumpForce));
+        }
+        else
+        {
+            Rigidbody2D.AddForce(new Vector2(0, AirForce));
+        }
     }
 
     private void Shoot()
