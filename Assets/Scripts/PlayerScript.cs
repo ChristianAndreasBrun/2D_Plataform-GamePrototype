@@ -10,17 +10,16 @@ public class PlayerScript : MonoBehaviour
     public float Speed;
     public float JumpForce;
     public float AirForce;
-    public int MaxJumps = 2;
-    public int Health = 5;
+    public int MaxJumps;
     public bool Grounded;
-    public float RayLenght = 1;
+    public float RayLenght;
     public LayerMask Mask;
     public List<Vector3> originPoints;
 
 
+    //private Controler_LifeScript Health;
     private Rigidbody2D Rigidbody2D;
     private Animator Animator;
-    //private int Ground;
     private float Horizontal;
     private float LastShoot;
     private int Jumps;
@@ -29,11 +28,12 @@ public class PlayerScript : MonoBehaviour
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
-        //Ground = GetComponent<Raycast_GroundScript>();
+        //Health = GetComponent<Controler_LifeScript>();
     }
 
     void Update()
     {
+        // Raycast detector
         Grounded = false;
         for (int i = 0; i < originPoints.Count; i++)
         {
@@ -80,7 +80,6 @@ public class PlayerScript : MonoBehaviour
         Animator.SetBool("grounded", Grounded);
 
 
-
         if (Grounded)
         {
             Jumps = MaxJumps;
@@ -100,9 +99,7 @@ public class PlayerScript : MonoBehaviour
 
     }
 
-        
-     
-
+    
     private void Jump()
     {
         Rigidbody2D.AddForce(new Vector2(0, JumpForce));
@@ -139,9 +136,9 @@ public class PlayerScript : MonoBehaviour
         Rigidbody2D.velocity = new Vector2(Horizontal * Speed, Rigidbody2D.velocity.y);
     }
 
-    public void Hit()
-    {
-        Health = Health - 1;
-        if (Health == 0) Destroy(gameObject);
-    }
+    //public void Hit()
+    //{
+    //    Health = Health - 1;
+    //    if (Health == 0) Destroy(gameObject);
+    //}
 }

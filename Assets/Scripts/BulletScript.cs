@@ -10,11 +10,13 @@ public class BulletScript : MonoBehaviour
 
     private Rigidbody2D Rigidbody2D;
     private Vector2 Direction;
+    private Controler_LifeScript CurrentLifes;
 
     void Start()
     {
-        Rigidbody2D= GetComponent<Rigidbody2D>();
+        Rigidbody2D = GetComponent<Rigidbody2D>();
         Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
+        CurrentLifes = GetComponent<Controler_LifeScript>();
     }
 
     void Update()
@@ -40,7 +42,7 @@ public class BulletScript : MonoBehaviour
         Grunt_EnemyScript GruntEnemy = collision.GetComponent<Grunt_EnemyScript>();
         if (PLAYER != null)
         {
-            PLAYER.Hit();
+            PLAYER.CurrentLifes();
         }
         if (GruntEnemy != null)
         {
