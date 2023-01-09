@@ -33,21 +33,6 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        PlayerScript PLAYER = collision.GetComponent<PlayerScript>();
-        Grunt_EnemyScript GruntEnemy = collision.GetComponent<Grunt_EnemyScript>();
-        if (PLAYER != null)
-        {
-            PLAYER.Hit();
-        }
-        if (GruntEnemy != null)
-        {
-            GruntEnemy.Hit();
-        }
-        DestroyBullet();
-    }
 }
 
 

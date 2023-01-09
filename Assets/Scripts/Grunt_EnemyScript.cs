@@ -32,6 +32,11 @@ public class Grunt_EnemyScript : MonoBehaviour
             Shoot();
             LastShoot = Time.time;
         }
+
+        if (Health == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Shoot()
@@ -52,9 +57,12 @@ public class Grunt_EnemyScript : MonoBehaviour
         bullet.GetComponent<BulletScript>().SetDirection(direction);
     }
 
-    public void Hit()
+  
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Health = Health - 1;
-        if (Health == 0) Destroy(gameObject);
+        if(collision.tag == "Bullet")
+        {
+            Health-= 1;
+        }
     }
 }
