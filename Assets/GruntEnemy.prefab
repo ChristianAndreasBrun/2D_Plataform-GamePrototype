@@ -193,7 +193,6 @@ MonoBehaviour:
   Cannon: {fileID: 2745898794717621248}
   PLAYER: {fileID: 0}
   EnemyBullet: {fileID: 3049925927574481681, guid: c69f287c46e87d041a10787572e47e6c, type: 3}
-  Health: 3
 --- !u!114 &8934051472216756591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,8 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d815fbac9fae94280ac85bd9cf8e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentLifes: 0
-  MaxLifes: 3
-  InvencibleTime: 0
-  Death_Mode: 2
-  Respawn: {fileID: 0}
+  lifes_current: 0
+  lifes_max: 10
+  invencible_time: 0
+  death_mode: 2
+  respawn: {fileID: 0}
