@@ -28,7 +28,6 @@ public class PlayerScript : MonoBehaviour
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
-        //Health = GetComponent<Controler_LifeScript>();
     }
 
     void Update()
@@ -91,15 +90,20 @@ public class PlayerScript : MonoBehaviour
         }
 
         // Input del Player para disparar
-        if (Input.GetKey(KeyCode.C) && Time.time > LastShoot + 0.15f) 
+        if (Input.GetKey(KeyCode.C) && Time.time > LastShoot + 0.15f)
         {
             Shoot();
             LastShoot = Time.time;
         }
 
+        if (true)
+        {
+
+        }
+
     }
 
-    
+
     private void Jump()
     {
         Rigidbody2D.AddForce(new Vector2(0, JumpForce));
@@ -124,7 +128,7 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            direction= Vector2.left;
+            direction = Vector2.left;
         }
 
         GameObject bullet = Instantiate(PlayerBullet, Cannon.transform.position + direction * 0.1f, Quaternion.identity);
@@ -135,10 +139,5 @@ public class PlayerScript : MonoBehaviour
     {
         Rigidbody2D.velocity = new Vector2(Horizontal * Speed, Rigidbody2D.velocity.y);
     }
-
-    //public void Hit()
-    //{
-    //    Health = Health - 1;
-    //    if (Health == 0) Destroy(gameObject);
-    //}
 }
+

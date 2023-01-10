@@ -11,8 +11,6 @@ public class Controler_LifeScript : MonoBehaviour
     public enum DeathMode { Teleport, ReloadScene, Destroy}
     public DeathMode Death_Mode;
     public Transform Respawn;
-
-    //private PlayerScript Health;
     private Rigidbody2D Rigidbody2D;
     private bool Invencible;
     
@@ -28,7 +26,7 @@ public class Controler_LifeScript : MonoBehaviour
         {
             CurrentLifes -= damage;
             StartCoroutine(Invencible_Corutine());
-            if (CurrentLifes <= 0)
+            if (CurrentLifes == 0)
             {
                 Death();
             }
@@ -61,11 +59,5 @@ public class Controler_LifeScript : MonoBehaviour
         Invencible = true;
         yield return new WaitForSeconds(InvencibleTime);
         Invencible = false;
-    }
-
-    public void Hit()
-    {
-        CurrentLifes = CurrentLifes - 1;
-        if (CurrentLifes == 0) Destroy(gameObject);
     }
 }

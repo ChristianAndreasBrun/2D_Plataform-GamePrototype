@@ -20,6 +20,7 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         Rigidbody2D.velocity = Direction * Speed;
+        //Rigidbody2D.AddForce(Direction * Speed);
     }
 
 
@@ -34,5 +35,3 @@ public class BulletScript : MonoBehaviour
         Destroy(gameObject);
     }
 }
-
-

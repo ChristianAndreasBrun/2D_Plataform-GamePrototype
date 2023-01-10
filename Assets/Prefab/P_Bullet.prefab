@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 610716957101014192}
   - component: {fileID: 610716957101014207}
   - component: {fileID: 610716957101014195}
+  - component: {fileID: 5116712061611878491}
   - component: {fileID: 610716957101014206}
   - component: {fileID: 610716957101014194}
   - component: {fileID: 610716957101014193}
   m_Layer: 0
-  m_Name: p_Bullet
-  m_TagString: Bullet
+  m_Name: P_Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +102,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sound: {fileID: 8300000, guid: dc71c33beecccc34894535aa074928e0, type: 3}
-  Speed: 3
+  Speed: 10
+--- !u!114 &5116712061611878491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610716957101014205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135a580ee586fcd44805a74a2b4a6b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  ignoreInvencible: 0
+  target: Enemy
 --- !u!95 &610716957101014206
 Animator:
   serializedVersion: 5

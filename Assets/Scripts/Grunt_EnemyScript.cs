@@ -7,7 +7,6 @@ public class Grunt_EnemyScript : MonoBehaviour
     public GameObject Cannon;
     public GameObject PLAYER;
     public GameObject EnemyBullet;
-    public int Health = 3;
 
     private float LastShoot;
 
@@ -32,11 +31,6 @@ public class Grunt_EnemyScript : MonoBehaviour
             Shoot();
             LastShoot = Time.time;
         }
-
-        if (Health == 0)
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void Shoot()
@@ -55,14 +49,5 @@ public class Grunt_EnemyScript : MonoBehaviour
 
         GameObject bullet = Instantiate(EnemyBullet, Cannon.transform.position + direction * 0.1f, Quaternion.identity);
         bullet.GetComponent<BulletScript>().SetDirection(direction);
-    }
-
-  
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Bullet")
-        {
-            Health-= 1;
-        }
     }
 }

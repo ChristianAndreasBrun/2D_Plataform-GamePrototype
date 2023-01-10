@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3049925927574481687}
   - component: {fileID: 3049925927574481686}
   - component: {fileID: 3049925927574481685}
+  - component: {fileID: 8898361378150873447}
   - component: {fileID: 3049925927574481684}
   - component: {fileID: 3049925927574481683}
   - component: {fileID: 3049925927574481682}
@@ -101,7 +102,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sound: {fileID: 8300000, guid: b01e22da56861e644b6a2a7f13057d3c, type: 3}
-  Speed: 3
+  Speed: 10
+--- !u!114 &8898361378150873447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3049925927574481681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135a580ee586fcd44805a74a2b4a6b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  ignoreInvencible: 0
+  target: Player
 --- !u!95 &3049925927574481684
 Animator:
   serializedVersion: 5
