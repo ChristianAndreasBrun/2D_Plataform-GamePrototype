@@ -1,2 +1,4 @@
 # Plataformas2D-CAB
- Un juego en 2D del género plataforma, para el modulo de M03UF1
+ Un juego en 2D del género plataforma
+
+Unity version: 2021.3.30f1
